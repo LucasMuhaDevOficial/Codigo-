@@ -1,0 +1,27 @@
+const http = require('http');
+
+const server = http.createServer((req, res) => {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/plain');
+  res.end('Hello World\n');
+});
+
+server.listen(8080, () => {
+  console.log('Server running at http://localhost:8080/');
+});
+
+const fs = require('fs');
+
+fs.readFile('/path/to/file', (err, data) => {
+  if (err) {
+    console.error(err);
+    return;
+  }
+  console.log(data);
+});
+
+function soma(a, b) {
+    return a + b;
+  }
+  
+  console.log(soma(2, 3)); // saída: 5
