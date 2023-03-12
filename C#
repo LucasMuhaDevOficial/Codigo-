@@ -1,0 +1,29 @@
+const arr = [1, 2, 3, 4, 5];
+
+for (let i = 0; i < arr.length; i++) {
+  console.log(arr[i]);
+}
+
+class Pessoa {
+  public:
+    Pessoa(string nome) {
+      this->nome = nome;
+    }
+
+    void apresentar() {
+      cout << "Meu nome é " << this->nome << endl;
+    }
+
+  private:
+    string nome;
+};
+
+Pessoa pessoa("Lucas");
+pessoa.apresentar(); // saída: "Meu nome é Lucas"
+
+int i = 0;
+
+while (i < 10) {
+  cout << i << endl;
+  i++;
+}
