@@ -1,0 +1,10 @@
+<form>
+  <label for="name">Nome:</label>
+  <input type="text" id="name" name="name"><br>
+
+  <label for="email">E-mail:</label>
+  <input type="email" id="email" name="email"><br>
+
+  <input type="submit" value="Enviar">
+</form>
+<a href="https://www.example.com">Ir para o exemplo</a>
